@@ -1,15 +1,14 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import src from '../assets/girl.jpg'
-
-defineProps<{ msg: string }>()
+import girlImg from '../assets/girl.jpg'
 
 const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-  <img :src="src" alt="firl">
+  <h1>'Hello Vue 3 + TypeScript + Vite'</h1>
+  <router-link to="/test"></router-link>
+  <img :src="girlImg" alt="firl" width="10" height="10">
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>

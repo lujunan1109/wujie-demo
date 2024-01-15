@@ -5,12 +5,14 @@ import App from './App.vue'
 
 // 导入你的组件
 import HelloWorld from './components/HelloWorld.vue'
+import TestPage from './components/TestPage.vue'
 
 // 创建路由实例
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', component: HelloWorld },
+    { path: '/test', component: TestPage }
   ]
 })
 

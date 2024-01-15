@@ -1,7 +1,7 @@
 {
-  "name": "mian",
-  "version": "0.0.0",
+  "name": "main-demo",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,12 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "path": "^0.12.7",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5",
+    "wujie": "^1.0.22",
     "wujie-vue3": "^1.0.22"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
-    "vite": "^5.0.10"
+    "vite": "^5.0.8"
   }
 }

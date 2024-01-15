@@ -20,9 +20,21 @@
 
 
 #### 原理
+ webcomponent 容器
 利用shadowdom隔离css
 js利用空的iframe隔离
-通信用proxy实现
+通信用proxy实现[evntbus]
 
+### 介绍
+- https://zhuanlan.zhihu.com/p/551206945?utm_id=0
 
+#### wujie优势[TX]
+- 对比其他方案，比如乾坤来说对于项目入侵成本更低，功能也基本可以覆盖使用场景
+- 对于vite支持度相对其他方案更优
+- wujie有预加载策略，利于加载三维业务场景
+- 文档清晰容易阅读，社区也一直在维护
+
+### test
+- 静态资源，图片
+- 通信，props,window[同源],bus
 
