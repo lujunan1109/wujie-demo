@@ -11,8 +11,8 @@ import TestPage from './components/TestPage.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', component: HelloWorld },
-    { path: '/test', component: TestPage }
+    { path: '/vue', component: HelloWorld },
+    { path: '/vue/test', component: TestPage }
   ]
 })
 

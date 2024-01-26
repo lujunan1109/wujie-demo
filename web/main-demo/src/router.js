@@ -6,7 +6,7 @@ export const routes = [
         component: () => import('@/components/HelloWorld.vue'),
         children: [
             {
-                path: '/vue',
+                path: '/vue-demo',
                 name: 'vue',
                 meta: {
                     title: 'vue',
@@ -18,7 +18,7 @@ export const routes = [
                 component: () => import('@/components/VueDemo.vue'),
           },
             {
-                path: '/react',
+                path: '/react-demo',
                 name: 'react',
                 meta: {
                     title: 'react',

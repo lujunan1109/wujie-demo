@@ -14,7 +14,6 @@ bus.$on('postMsg', (msg) => {
 
 <style scoped>
 .container {
-  width: 100%;
   display: flex;
 
   .menu {

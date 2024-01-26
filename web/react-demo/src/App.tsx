@@ -6,12 +6,12 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-  const getParentMsg = window.$wujie?.props;
-console.log(getParentMsg, '父应用的信息-react');
+//   const getParentMsg = window?.$wujie?.props;
+// console.log(getParentMsg, '父应用的信息-react');
 
   return (
     <>
-      <div>
+      <div className='container-content '>
         <img src={girlPic} alt='girl' width={20} height={20}/>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -20,7 +20,7 @@ console.log(getParentMsg, '父应用的信息-react');
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1 className="container">Vite + React</h1>
       <div>
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

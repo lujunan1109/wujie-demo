@@ -7,7 +7,7 @@ const count = ref(0)
 
 <template>
   <h1>'Hello Vue 3 + TypeScript + Vite'</h1>
-  <router-link to="/test"></router-link>
+  <router-link to="/vue/test">go to test</router-link>
   <img :src="girlImg" alt="firl" width="10" height="10">
 
   <div class="card">
