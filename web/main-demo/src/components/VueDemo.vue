@@ -1,11 +1,11 @@
 <template>
-    <WujieVue :url="vueUrl" name="vue-demo" :props="mainProps"></WujieVue>
+    <WujieVue :url="vueUrl" name="vue-demo" :props="mainProps" exec></WujieVue>
 </template>
 
 <script setup lang="ts">
 const mainProps = {
-  name: '主应用的名称',
-  data: '主应用信息'
+  name: 'main-demo',
+  data: '主应用通过props传消息给子应用'
 }
 
 const vueUrl = import.meta.env.VITE_VUE

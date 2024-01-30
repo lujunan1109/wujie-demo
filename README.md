@@ -39,6 +39,7 @@ js利用空的iframe隔离
 ### test
 - 静态资源，图片
 - 通信，props,window[同源],bus
+- 全局状态可以在window上建立，少量可控
 
 
 

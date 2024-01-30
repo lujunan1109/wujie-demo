@@ -14,6 +14,9 @@ interface WindowWithWujie extends Window {
   __POWERED_BY_WUJIE__?: boolean;
   __WUJIE_MOUNT?: () => void;
   __WUJIE_UNMOUNT?: () => void;
+  $wujie?: {
+    bus: () => void;
+  }
 }
 
 declare const window: WindowWithWujie;

@@ -3,11 +3,14 @@
 </template>
 
 <script setup lang="ts">
-import { RouteLocationRaw, useRouter } from 'vue-router';
 import { bus } from 'wujie';
 
-const $router = useRouter();
-bus.$on('sub-vue-change', (msg: { path: RouteLocationRaw; }) => {
-  $router.push(msg.path);
+bus.$on('mainPostMsg', (msg: any) => {
+  console.log(msg, '接收主应用消息');
+  cb()
 })
+
+const cb = () => {
+  bus.$emit('vueDemoPostMsg', "子应用向主应用发送消息")
+}
 </script>

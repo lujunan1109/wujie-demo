@@ -1,10 +1,11 @@
 <script setup>
 import { bus } from 'wujie'
 // 通信
-bus.$on('postMsg', (msg) => {
-  console.log(msg, '接受到子应用信息')
-})
 
+
+bus.$on('vueDemoPostMsg', (msg) => {
+  console.log(msg, '接收子应用消息')
+})
 </script>
 
 <template>

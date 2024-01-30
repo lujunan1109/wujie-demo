@@ -4,10 +4,13 @@ import viteLogo from '/vite.svg'
 import girlPic from './assets/girl.jpg'
 import './App.css'
 
+
 function App() {
   const [count, setCount] = useState(0)
-//   const getParentMsg = window?.$wujie?.props;
-// console.log(getParentMsg, '父应用的信息-react');
+  window.$wujie?.bus.$on("事件名字", function (msg) {
+console.log(msg, 'react接收到vue的消息');
+
+  });
 
   return (
     <>
